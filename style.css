@@ -1,0 +1,179 @@
+body{
+    background-color:white;
+    
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    height:60px;
+    padding: 10px 60px;
+    color: rgb(0, 0, 0);
+    border-bottom: 1px solid black;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.right{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    cursor: pointer;
+
+}
+
+.medium{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+#getstarted{
+    border: 1px solid black;
+    padding: 8px 15px;
+    border-radius: 20px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+.main{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 60px;
+
+}
+
+.main img{
+    width: 600px;
+    margin-top: 40px;
+    height: auto;
+    
+}
+
+
+.text{
+    font-size: 40px;
+    padding: 0px 50px;
+    text-align: left;
+}
+
+#News{
+    margin-bottom: 10px;
+}
+
+
+#one{
+    font-size: 20px;
+    margin-top: 0px;
+    
+}
+
+button{
+    font-size: 20px;
+    border: 1px solid black;
+    padding: 8px 15px;
+    border-radius: 20px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    margin-top: 25px;
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 35px;
+    margin-top: 50px;
+    padding-top: 5px;
+    border-top: 1px solid black;
+}
+
+footer p{
+    cursor: pointer;
+}
+
+#posts{
+    display: grid;
+    grid-template-columns:repeat(3, 1fr);
+    gap: 20px;
+    margin: 10px 20px;
+}
+.card{
+    border: 1px solid black;
+    padding: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    
+}
+.card:hover{
+    box-shadow: 0 4px 8px rgba(22, 22, 22, 0.2);
+    transform: translateY(-5px);
+}
+
+.card h3 {
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #333;
+}
+
+.card p {
+  font-size: 14px;
+  color: #414141;
+  line-height: 1.5;
+}
+
+
+
+@media (max-width: 900px) {
+    .main img{
+   display: none;
+   }
+
+   .temp{
+    display: none;
+   }
+
+
+    .text{
+        font-size: 30px;
+        padding: 0px 20px;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .temp{
+        display: none;
+    }
+
+    .main img{
+        display: none;
+    }
+    .text{
+        font-size: 25px;
+    }
+
+    #one{
+        font-size: 18px;
+    }
+
+    button{
+        font-size: 18px;
+    }
+
+    footer{
+        
+    }
+}
+
+
