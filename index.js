@@ -3,7 +3,7 @@ fetch("https://jsonplaceholder.typicode.com/posts")
   .then(data => {
     const container = document.getElementById("posts");
 
-    data.slice(0, 6).forEach(post => {
+    data.slice(0, 8).forEach(post => {
       const card = document.createElement("div");
       card.className = "card";
 
