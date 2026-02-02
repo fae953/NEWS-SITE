@@ -13,4 +13,16 @@ fetch(`https://jsonplaceholder.typicode.com/posts/${postId}`)
         <p>${post.body}</p>
       </div>
     `;
+
+    fetch(`https://jsonplaceholder.typicode.com/posts/${post.id}/comments`)
+        .then(res => res.json())
+        .then(comments => {
+          const commentsContainer = card.querySelector(".comments");
+          comments.slice(0, 3).forEach(comment => { 
+            const commentEl = document.createElement("p");
+            commentEl.innerHTML = `<strong>${comment.name}:</strong> ${comment.body}`;
+            commentsContainer.appendChild(commentEl);
+          });
+        });
+
   });
