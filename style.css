@@ -155,6 +155,10 @@ form{
   text-decoration: none;
 }
 
+.post-link:hover{
+    color: rgb(163, 197, 255);
+}
+
 
 
 .card-img{ 
