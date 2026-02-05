@@ -28,9 +28,10 @@ fetch('https://jsonplaceholder.typicode.com/posts?_limit=6')
       const card = document.createElement("div");
       card.classList.add("card");
 
+      const imagePath = "img/news.jpg";
       card.innerHTML = `
-      <h3>${post.title}</h3>
-      <p>${post.body}</p>
+       <img src="${imagePath}" alt="Post image" class="card-img"/>
+      <a href="post.html?id=${post.id}" class="post-link">${post.title}</a> <br/> <br/> 
         <button class="delete-btn">Delete</button>
       `;
 

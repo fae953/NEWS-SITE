@@ -1,5 +1,5 @@
 body{
-    background-color:rgb(219, 211, 196);
+    background-color:rgb(255, 255, 255);
     
 }
 
@@ -11,7 +11,7 @@ nav{
     padding: 10px 60px;
     color: rgb(0, 0, 0);
     border-bottom: 1px solid black;
-    background-color: rgb(219, 211, 196);;
+    background-color: rgb(255, 255, 255);;
     position: fixed;
     top: 0;
     left: 0;
@@ -148,16 +148,38 @@ form{
     transform: translateY(-5px);
 }
 
-.card h3 {
+.post-link {
   margin-bottom: 10px;
-  font-size: 18px;
+  font-size: 22px;
   color: #333;
+  text-decoration: none;
 }
 
-.card p {
-  font-size: 14px;
-  color: #414141;
-  line-height: 1.5;
+
+
+.card-img{ 
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+
+
+
+.delete-btn{
+    background-color: rgb(212, 211, 209);
+    color: black;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    border: 1px solid black;
+    border-radius: 30px;
+
+}
+
+.delete-btn:hover{
+    background-color: #717374;
 }
 
 
@@ -177,6 +199,16 @@ form{
         font-size: 30px;
         padding: 0px 20px;
     }
+
+    form{
+     width: 70%;   
+    }
+
+       .card-img{ 
+  width:80%;
+  height: 150px;
+  
+}
 }
 
 
@@ -201,11 +233,14 @@ form{
         font-size: 18px;
     }
 
-    footer{
-        
+    form{
+     width: 70%;   
     }
 
-    
+    .card-img{ 
+  width:50%;
+  height: 100px;
+  
 }
 
-
+}
